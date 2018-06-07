@@ -1,6 +1,7 @@
 
 body {
-  padding: none;
+  padding: 0%;
+  margin: 0%;
   background-color: transparent;
 }
 img {
@@ -17,12 +18,22 @@ img {
   /*padding-top: 10%;
   padding-bottom: 5%;*/
 }
+.midContainer {
+  width: 75%;
+  margin-left: 17%;
+}
 .row {
   display: block;
   width: 100%;
 }
 .center {
   justify-content: center;
+}
+.midPar {
+  width: 55%;
+}
+.conclusion {
+  width: 70%;
 }
 .columns {
   display: flex;
@@ -45,6 +56,10 @@ img {
   padding: 5% 0%;
   margin: 0;
   background-color: #dfe3e8;
+}
+.noBack{
+  padding: 0% 0% 5% 0%;
+  background-color: transparent;
 }
 /* #padExc {
   padding-right: 10%;
@@ -79,9 +94,6 @@ p {
 }
 
 /*introduction*/
-.midPar {
-  width: 60%;
-}
 #intro {
   padding-top: 5%;
 }
@@ -140,8 +152,7 @@ p {
 
 /*Quotation*/
 .introQuotation {
-  width: 65%;
-  margin-left: 35%;
+  width: 80%;
 }
 .quotAuthor {
   display: flex;
@@ -159,25 +170,29 @@ p {
   /* background-color: #DFE3E8; */
   padding: 6% 10%;
 }
-@media only screen and (max-width: 900px) {
+/* @media only screen and (max-width: 900px) {
   padding: 6% 4%;
   padding-left: 5%;
-}
+} */
 #author {
   font-style: bold;
+  line-height: 3;
 }
 #authRole {
   font-style: italic;
   font-weight: normal;
+  line-height: 1.5;
 }
 
 /* Workforce revolution */
 .legendaWork{
-  max-width: 25%;
-  height: auto;
+  width: 15vw;
+  height: 100%;
+  padding-top: 2%;
+  margin-left: 18%;
 }
 .legendaFeas {
-  max-width: 75%;
+  max-width: 90%;
   height: auto;
 }
 /*Treemap*/
@@ -190,9 +205,9 @@ p {
 }
 
 .treemapW {
-  width: 100vw;
+  width: 100%;
 }
-@media only screen and (min-width: 1500px) {
+/* @media only screen and (min-width: 1500px) {
   .treemapW {
     width: 70vw;
   }
@@ -201,7 +216,7 @@ p {
   .treemapW {
     width: 85vw;
   }
-}
+} */
 
 /*feasible impact*/
 #feaslegend {
@@ -216,11 +231,11 @@ p {
 #tasktop {
   margin-top: -12%;
 }
-@media only screen and (max-width: 980px) {
+/* @media only screen and (max-width: 980px) {
   #tasktop {
     margin-top: 0%;
   }
-}
+} */
 #schwab {
   /*padding: 0;*/
 
@@ -228,31 +243,30 @@ p {
 
 
 /*Typography*/
+/* Fonts */
 body {
   font-family: 'main-regular';
   }
-h1, h2, h3 {
+.fulltitle, .subtitle, .introQuotation, .economyTitle, .title {
   font-family: 'title-bold';
+  font-weight: bold;
 }
-
+/* Sizes */
 body {
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 .fulltitle {
   font-size: 3rem;
-  font-weight: bold;
 }
-.economyTitle {
+.economyTitle, .title {
   font-size: 2rem;
 }
-.title {
-  font-size: 2rem;
-  font-weight: bold;
+.introQuotation {
+  font-size: 1.6rem;
 }
-p {
-  font-weight: normal;
+.subtitle {
+  font-size: 1.3rem;
 }
-
 
 a {
   /*color: #212529;*/
@@ -303,28 +317,6 @@ a:hover {
   /* letter-spacing: 4px; */
   margin-bottom: 3%;
 }
-@media only screen and (max-width: 1400px) {
-  .fulltitle {
-    font-size: 1rem;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .fulltitle {
-    font-size: 9vw;
-  }
-  #schwab h2{
-    font-size: 4vw;
-  }
-  #schwab h3 {
-    font-size: 4vw;
-  }
-  #schwab h4 {
-    font-size: 3vw;
-  }
-  body {
-    font-size: 1.3em;
-  }
-}
 
 #smallquot {
   font-size: 1rem;
@@ -332,9 +324,10 @@ a:hover {
 }
 /*big question marks in opinion*/
 #quest {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-right: 2%;
+  margin-left: 2%;
 }
 .so {
   font-size: 6rem;
@@ -354,8 +347,94 @@ a:hover {
 
 /*Responsive*/
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1380px) {
+/* Layout */
   .container {
-    width: 95%;
+    padding: 7%;
+    width: 85%;
   }
+   img{
+    width: 100%;
+  }
+  .midPar {
+    width: 75%;
+  }
+  .conclusion {
+    width: 75%;
+  }
+  .columns {
+    display: block;
+  }
+  .col {
+    width: 75%;
+    max-width: 530px;
+  }
+  .twoCol {
+    margin-left: 0%;
+  }
+  .container-wide {
+    padding: 5% 0%;
+    margin: 0;
+  }
+  .midContainer {
+    width: 85%;
+    margin: 0% auto;
+  }
+  .infografica {
+    padding: 5% 0%;
+  }
+  .containerWork {
+    overflow: scroll;
+    padding: 5% 0%;
+    margin: 0;
+  }
+  .graph {
+    min-width: 800px;
+    margin-left: -550px;
+    overflow: scroll;
+  }
+  .blueruler, .greenruler {
+    margin-top: -3%;
+  }
+  #robotdef {
+    margin-left: 0%;
+    margin-top: 15%;
+  }
+  .quotAuthor {
+    margin-right: 5%;
+  }
+  #smallquot {
+    margin-left: 5%;
+  }
+  .legendaWork {
+    width: 45vw;
+    margin-left: 20%;
+  }
+  .legendaFeas {
+    width: 60vw;
+  }
+  /* expertopinion */
+  #expImgfix {
+    margin: 5% 0%;
+    width: 100%;
+  }
+
+
+/* Typography */
+  body{
+    font-size: 1rem;
+  }
+  .fulltitle {
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+  }
+  .economyTitle {
+    font-size: 2rem;
+  }
+
 }
