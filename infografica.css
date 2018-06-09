@@ -7,9 +7,9 @@ body {
 img {
   width: 100%;
 }
-#expImgfix {
+/* #expImgfix {
   max-width: 96%;
-}
+} */
 .container {
   display: block;
   margin: 0% auto;
@@ -38,7 +38,7 @@ img {
 .columns {
   display: flex;
 }
-.col {
+.col, .colTask {
   width: 45%;
   /* word-wrap: break-word; */
 }
@@ -61,30 +61,6 @@ img {
   padding: 0% 0% 5% 0%;
   background-color: transparent;
 }
-/* #padExc {
-  padding-right: 10%;
-  padding-left: 5%;
-}
-@media only screen and (min-width: 1200px) {
-  #padExc {
-    padding-left: 5%;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  #padExc {
-    padding-left: 10%;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  #padExc {
-    padding-left: 10%;
-  }
-}
-@media only screen and (max-width: 900px) {
-  #padExc {
-    padding-left: 10%;
-  }
-} */
 #investments, #impact, #pootential, #feasible, #opinion, #source {
   /*padding: 0% 10%;*/
 }
@@ -170,10 +146,7 @@ p {
   /* background-color: #DFE3E8; */
   padding: 6% 10%;
 }
-/* @media only screen and (max-width: 900px) {
-  padding: 6% 4%;
-  padding-left: 5%;
-} */
+
 #author {
   font-style: bold;
   line-height: 3;
@@ -207,16 +180,6 @@ p {
 .treemapW {
   width: 100%;
 }
-/* @media only screen and (min-width: 1500px) {
-  .treemapW {
-    width: 70vw;
-  }
-}
-@media only screen and (max-width: 1500px) {
-  .treemapW {
-    width: 85vw;
-  }
-} */
 
 /*feasible impact*/
 #feaslegend {
@@ -229,16 +192,8 @@ p {
 }
 
 #tasktop {
-  margin-top: -12%;
-}
-/* @media only screen and (max-width: 980px) {
-  #tasktop {
-    margin-top: 0%;
-  }
-} */
-#schwab {
-  /*padding: 0;*/
-
+  margin-top: 10%;
+  margin-left: 20%;
 }
 
 
@@ -350,7 +305,7 @@ a:hover {
 @media only screen and (max-width:1380px) {
 /* Layout */
   .container {
-    padding: 7%;
+    padding: 0% 7%;
     width: 85%;
   }
    img{
@@ -381,7 +336,7 @@ a:hover {
     margin: 0% auto;
   }
   .infografica {
-    padding: 5% 0%;
+    /* padding: 5% 0%; */
   }
   .containerWork {
     overflow: scroll;
@@ -389,9 +344,12 @@ a:hover {
     margin: 0;
   }
   .graph {
-    min-width: 800px;
-    margin-left: -550px;
-    overflow: scroll;
+    min-width: 965px;
+    margin-left: -540px;
+    /* overflow-x: scroll; */
+  }
+  .quotAuthor {
+    margin-right: 0%;
   }
   .blueruler, .greenruler {
     margin-top: -3%;
@@ -407,16 +365,24 @@ a:hover {
     margin-left: 5%;
   }
   .legendaWork {
-    width: 45vw;
-    margin-left: 20%;
+    width: 40vw;
+    max-width: 250px;
+    /* margin-left: 40%; */
   }
   .legendaFeas {
     width: 60vw;
+  }
+  .colTask {
+    width: 100%;
   }
   /* expertopinion */
   #expImgfix {
     margin: 5% 0%;
     width: 100%;
+  }
+  #tasktop {
+    margin-top: 0%;
+    margin-left: 0%;
   }
 
 
@@ -436,5 +402,11 @@ a:hover {
   .economyTitle {
     font-size: 2rem;
   }
+  #source {
+    font-size: 0.7rem;
+  }
 
+  .noMobile {
+    display: none;
+  }
 }
